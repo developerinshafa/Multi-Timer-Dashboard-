@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="/src/style.css" rel="stylesheet">
+
+    <title>multi-timer-dashboard</title>
+  </head>
+  <body class="bg-cyan-950 p-2">
+    <h1 class="text-cyan-400 text-4xl font-bold text-center mt-8 p-6">⏳ Multi Timer Dashboard</h1>
+    <main class="flex justify-center p-4">
+
+      <aside class="bg-white p-6 m-4 space-y-4 rounded-md border-b-8 border-l-8 border-cyan-500 shadow-lg shadow-blue-500/50 inset-shadow-sm inset-shadow-indigo-500">
+        <div class="grid">
+          <h2 class="text-2xl font-bold text-cyan-700 m-5 text-center">Create Timer</h2>
+          <label for="text" class="p-2">Add Timer Name :</label>
+          <input type="text" name="text" id="timername" placeholder=" ✒ Enter the Timer Name" class="bg-blue-50 p-2 border-b-8 border-cyan-500">
+        </div>
+
+        <div>
+          <label for="text" class="p-2">Add Duration</label> 
+          <div class="space-x-2 space-y-2">
+            <input type="number" name="hr" id="hr" min="0" max="12" class="p-2 rounded-md shadow-blue-500/50 inset-shadow-sm inset-shadow-indigo-500 border-b-4 border-l-8 border-cyan-500" > 
+            <span> hr</span>
+            <input type="number" name="min" id="min" min="0" max="60" class="p-2 rounded-md shadow-blue-500/50 inset-shadow-sm inset-shadow-indigo-500 border-b-4 border-l-8 border-cyan-500" >
+            <span>min</span> 
+            <input type="number" name="sec" id="sec" min="0" max="60" class="p-2 rounded-md shadow-blue-500/50 inset-shadow-sm inset-shadow-indigo-500 border-b-4 border-l-8 border-cyan-500" >
+            <span>sec</span>
+          </div>
+        </div>
+
+        <button id="add" class="border-b-6 border-l-6 border-cyan-500 w-full py-2 mt-2 font-bold rounded-md px-2 inset-shadow-sm inset-shadow-indigo-500">Add Timer</button>
+      </aside>
+
+      <section id="dash" class="cols-sapn-3 p-2"> 
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
