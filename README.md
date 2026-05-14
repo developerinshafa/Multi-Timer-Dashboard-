@@ -13,5 +13,10 @@ All timers run simultaneously, automatically counting down and updating on the s
 ### Screenshots
 | [Screenshot01](./assets/img/Multi-Timer%20.jpeg)
 
+
+Link:https://multi-timer-dashboard-js.netlify.app/
+GitHub:https://github.com/developerinshafa/Multi-Timer-Dashboard-/
+
+
 ### Author
 - [M Fathima Inshafa]
